@@ -1,0 +1,37 @@
+{
+	"compiler": {
+		"version": "0.5.16+commit.9c3226ce"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/DSD/RoleAccessControl.sol": "RoleAccessControl"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/DSD/RoleAccessControl.sol": {
+			"keccak256": "0xe4dc1371df689c532501b56220988c080f22c3e74fe0f68a1828d4c708c6ebff",
+			"urls": [
+				"bzz-raw://fb429704a518a8c8c45bf78db5d3aaf6b27e7cf8de8d2ae47e58367bc5c5731c",
+				"dweb:/ipfs/QmfGAGHCrVU3Jpihf4ToTcwi4QgeWiNnYbHBAyZcaWHtXX"
+			]
+		}
+	},
+	"version": 1
+}

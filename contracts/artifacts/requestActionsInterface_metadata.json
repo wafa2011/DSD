@@ -1,0 +1,74 @@
+{
+	"compiler": {
+		"version": "0.5.16+commit.9c3226ce"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "category",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "security",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "legal",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "gas",
+						"type": "uint256"
+					}
+				],
+				"name": "searchDesc",
+				"outputs": [
+					{
+						"internalType": "address[]",
+						"name": "",
+						"type": "address[]"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/DSD/requestActionsInterface.sol": "requestActionsInterface"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/DSD/requestActionsInterface.sol": {
+			"keccak256": "0xf60fe0b3c9b0b222c108665c0b8418d97b56327d70ba6b7997387fe1d57e509b",
+			"urls": [
+				"bzz-raw://23d17fcac2a6d929acb949d9205e1412b3f453678284b783346134651f79c997",
+				"dweb:/ipfs/QmbTPqWXZSrpwXv2dh83jthJeuN3qazAoNwu3kmucdHdsh"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,521 @@
+{
+	"id": "bbf63af8fe8c4ce316d7b505646cb2a9",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.5.16",
+	"solcLongVersion": "0.5.16+commit.9c3226ce",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"contracts/DSD/RoleAccessControl.sol": {
+				"content": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.5.16;\r\ncontract RoleAccessControl{\r\n    struct user{\r\n        address id;\r\n        bool read;\r\n        bool write;\r\n        bool delet;\r\n    }\r\n    mapping(uint=>user) providers;\r\n}"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"contracts": {
+			"contracts/DSD/RoleAccessControl.sol": {
+				"RoleAccessControl": {
+					"abi": [],
+					"devdoc": {
+						"methods": {}
+					},
+					"evm": {
+						"assembly": "    /* \"contracts/DSD/RoleAccessControl.sol\":59:233  contract RoleAccessControl{\r... */\n  mstore(0x40, 0x80)\n  callvalue\n    /* \"--CODEGEN--\":8:17   */\n  dup1\n    /* \"--CODEGEN--\":5:7   */\n  iszero\n  tag_1\n  jumpi\n    /* \"--CODEGEN--\":30:31   */\n  0x00\n    /* \"--CODEGEN--\":27:28   */\n  dup1\n    /* \"--CODEGEN--\":20:32   */\n  revert\n    /* \"--CODEGEN--\":5:7   */\ntag_1:\n    /* \"contracts/DSD/RoleAccessControl.sol\":59:233  contract RoleAccessControl{\r... */\n  pop\n  dataSize(sub_0)\n  dup1\n  dataOffset(sub_0)\n  0x00\n  codecopy\n  0x00\n  return\nstop\n\nsub_0: assembly {\n        /* \"contracts/DSD/RoleAccessControl.sol\":59:233  contract RoleAccessControl{\r... */\n      mstore(0x40, 0x80)\n      0x00\n      dup1\n      revert\n\n    auxdata: 0xa265627a7a72315820d9c2aa864e6128c16d7bd4c0bad9936e99dce67b3c08ad7a4eacbf90e8d10a3664736f6c63430005100032\n}\n",
+						"bytecode": {
+							"linkReferences": {},
+							"object": "6080604052348015600f57600080fd5b50603e80601d6000396000f3fe6080604052600080fdfea265627a7a72315820d9c2aa864e6128c16d7bd4c0bad9936e99dce67b3c08ad7a4eacbf90e8d10a3664736f6c63430005100032",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x3E DUP1 PUSH1 0x1D PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH6 0x627A7A723158 KECCAK256 0xD9 0xC2 0xAA DUP7 0x4E PUSH2 0x28C1 PUSH14 0x7BD4C0BAD9936E99DCE67B3C08AD PUSH27 0x4EACBF90E8D10A3664736F6C634300051000320000000000000000 ",
+							"sourceMap": "59:174:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;59:174:0;;;;;;;"
+						},
+						"deployedBytecode": {
+							"linkReferences": {},
+							"object": "6080604052600080fdfea265627a7a72315820d9c2aa864e6128c16d7bd4c0bad9936e99dce67b3c08ad7a4eacbf90e8d10a3664736f6c63430005100032",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH6 0x627A7A723158 KECCAK256 0xD9 0xC2 0xAA DUP7 0x4E PUSH2 0x28C1 PUSH14 0x7BD4C0BAD9936E99DCE67B3C08AD PUSH27 0x4EACBF90E8D10A3664736F6C634300051000320000000000000000 ",
+							"sourceMap": "59:174:0:-;;;;;"
+						},
+						"gasEstimates": {
+							"creation": {
+								"codeDepositCost": "12400",
+								"executionCost": "66",
+								"totalCost": "12466"
+							}
+						},
+						"legacyAssembly": {
+							".code": [
+								{
+									"begin": 59,
+									"end": 233,
+									"name": "PUSH",
+									"value": "80"
+								},
+								{
+									"begin": 59,
+									"end": 233,
+									"name": "PUSH",
+									"value": "40"
+								},
+								{
+									"begin": 59,
+									"end": 233,
+									"name": "MSTORE"
+								},
+								{
+									"begin": 59,
+									"end": 233,
+									"name": "CALLVALUE"
+								},
+								{
+									"begin": 8,
+									"end": 17,
+									"name": "DUP1"
+								},
+								{
+									"begin": 5,
+									"end": 7,
+									"name": "ISZERO"
+								},
+								{
+									"begin": 5,
+									"end": 7,
+									"name": "PUSH [tag]",
+									"value": "1"
+								},
+								{
+									"begin": 5,
+									"end": 7,
+									"name": "JUMPI"
+								},
+								{
+									"begin": 30,
+									"end": 31,
+									"name": "PUSH",
+									"value": "0"
+								},
+								{
+									"begin": 27,
+									"end": 28,
+									"name": "DUP1"
+								},
+								{
+									"begin": 20,
+									"end": 32,
+									"name": "REVERT"
+								},
+								{
+									"begin": 5,
+									"end": 7,
+									"name": "tag",
+									"value": "1"
+								},
+								{
+									"begin": 5,
+									"end": 7,
+									"name": "JUMPDEST"
+								},
+								{
+									"begin": 59,
+									"end": 233,
+									"name": "POP"
+								},
+								{
+									"begin": 59,
+									"end": 233,
+									"name": "PUSH #[$]",
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 59,
+									"end": 233,
+									"name": "DUP1"
+								},
+								{
+									"begin": 59,
+									"end": 233,
+									"name": "PUSH [$]",
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 59,
+									"end": 233,
+									"name": "PUSH",
+									"value": "0"
+								},
+								{
+									"begin": 59,
+									"end": 233,
+									"name": "CODECOPY"
+								},
+								{
+									"begin": 59,
+									"end": 233,
+									"name": "PUSH",
+									"value": "0"
+								},
+								{
+									"begin": 59,
+									"end": 233,
+									"name": "RETURN"
+								}
+							],
+							".data": {
+								"0": {
+									".auxdata": "a265627a7a72315820d9c2aa864e6128c16d7bd4c0bad9936e99dce67b3c08ad7a4eacbf90e8d10a3664736f6c63430005100032",
+									".code": [
+										{
+											"begin": 59,
+											"end": 233,
+											"name": "PUSH",
+											"value": "80"
+										},
+										{
+											"begin": 59,
+											"end": 233,
+											"name": "PUSH",
+											"value": "40"
+										},
+										{
+											"begin": 59,
+											"end": 233,
+											"name": "MSTORE"
+										},
+										{
+											"begin": 59,
+											"end": 233,
+											"name": "PUSH",
+											"value": "0"
+										},
+										{
+											"begin": 59,
+											"end": 233,
+											"name": "DUP1"
+										},
+										{
+											"begin": 59,
+											"end": 233,
+											"name": "REVERT"
+										}
+									]
+								}
+							}
+						},
+						"methodIdentifiers": {}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"contracts/DSD/RoleAccessControl.sol\":\"RoleAccessControl\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/DSD/RoleAccessControl.sol\":{\"keccak256\":\"0xe4dc1371df689c532501b56220988c080f22c3e74fe0f68a1828d4c708c6ebff\",\"urls\":[\"bzz-raw://fb429704a518a8c8c45bf78db5d3aaf6b27e7cf8de8d2ae47e58367bc5c5731c\",\"dweb:/ipfs/QmfGAGHCrVU3Jpihf4ToTcwi4QgeWiNnYbHBAyZcaWHtXX\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [
+							{
+								"astId": 14,
+								"contract": "contracts/DSD/RoleAccessControl.sol:RoleAccessControl",
+								"label": "providers",
+								"offset": 0,
+								"slot": "0",
+								"type": "t_mapping(t_uint256,t_struct(user)10_storage)"
+							}
+						],
+						"types": {
+							"t_address": {
+								"encoding": "inplace",
+								"label": "address",
+								"numberOfBytes": "20"
+							},
+							"t_bool": {
+								"encoding": "inplace",
+								"label": "bool",
+								"numberOfBytes": "1"
+							},
+							"t_mapping(t_uint256,t_struct(user)10_storage)": {
+								"encoding": "mapping",
+								"key": "t_uint256",
+								"label": "mapping(uint256 => struct RoleAccessControl.user)",
+								"numberOfBytes": "32",
+								"value": "t_struct(user)10_storage"
+							},
+							"t_struct(user)10_storage": {
+								"encoding": "inplace",
+								"label": "struct RoleAccessControl.user",
+								"members": [
+									{
+										"astId": 3,
+										"contract": "contracts/DSD/RoleAccessControl.sol:RoleAccessControl",
+										"label": "id",
+										"offset": 0,
+										"slot": "0",
+										"type": "t_address"
+									},
+									{
+										"astId": 5,
+										"contract": "contracts/DSD/RoleAccessControl.sol:RoleAccessControl",
+										"label": "read",
+										"offset": 20,
+										"slot": "0",
+										"type": "t_bool"
+									},
+									{
+										"astId": 7,
+										"contract": "contracts/DSD/RoleAccessControl.sol:RoleAccessControl",
+										"label": "write",
+										"offset": 21,
+										"slot": "0",
+										"type": "t_bool"
+									},
+									{
+										"astId": 9,
+										"contract": "contracts/DSD/RoleAccessControl.sol:RoleAccessControl",
+										"label": "delet",
+										"offset": 22,
+										"slot": "0",
+										"type": "t_bool"
+									}
+								],
+								"numberOfBytes": "32"
+							},
+							"t_uint256": {
+								"encoding": "inplace",
+								"label": "uint256",
+								"numberOfBytes": "32"
+							}
+						}
+					},
+					"userdoc": {
+						"methods": {}
+					}
+				}
+			}
+		},
+		"sources": {
+			"contracts/DSD/RoleAccessControl.sol": {
+				"ast": {
+					"absolutePath": "contracts/DSD/RoleAccessControl.sol",
+					"exportedSymbols": {
+						"RoleAccessControl": [
+							15
+						]
+					},
+					"id": 16,
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								"^",
+								"0.5",
+								".16"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "33:24:0"
+						},
+						{
+							"baseContracts": [],
+							"contractDependencies": [],
+							"contractKind": "contract",
+							"documentation": null,
+							"fullyImplemented": true,
+							"id": 15,
+							"linearizedBaseContracts": [
+								15
+							],
+							"name": "RoleAccessControl",
+							"nodeType": "ContractDefinition",
+							"nodes": [
+								{
+									"canonicalName": "RoleAccessControl.user",
+									"id": 10,
+									"members": [
+										{
+											"constant": false,
+											"id": 3,
+											"name": "id",
+											"nodeType": "VariableDeclaration",
+											"scope": 10,
+											"src": "114:10:0",
+											"stateVariable": false,
+											"storageLocation": "default",
+											"typeDescriptions": {
+												"typeIdentifier": "t_address",
+												"typeString": "address"
+											},
+											"typeName": {
+												"id": 2,
+												"name": "address",
+												"nodeType": "ElementaryTypeName",
+												"src": "114:7:0",
+												"stateMutability": "nonpayable",
+												"typeDescriptions": {
+													"typeIdentifier": "t_address",
+													"typeString": "address"
+												}
+											},
+											"value": null,
+											"visibility": "internal"
+										},
+										{
+											"constant": false,
+											"id": 5,
+											"name": "read",
+											"nodeType": "VariableDeclaration",
+											"scope": 10,
+											"src": "135:9:0",
+											"stateVariable": false,
+											"storageLocation": "default",
+											"typeDescriptions": {
+												"typeIdentifier": "t_bool",
+												"typeString": "bool"
+											},
+											"typeName": {
+												"id": 4,
+												"name": "bool",
+												"nodeType": "ElementaryTypeName",
+												"src": "135:4:0",
+												"typeDescriptions": {
+													"typeIdentifier": "t_bool",
+													"typeString": "bool"
+												}
+											},
+											"value": null,
+											"visibility": "internal"
+										},
+										{
+											"constant": false,
+											"id": 7,
+											"name": "write",
+											"nodeType": "VariableDeclaration",
+											"scope": 10,
+											"src": "155:10:0",
+											"stateVariable": false,
+											"storageLocation": "default",
+											"typeDescriptions": {
+												"typeIdentifier": "t_bool",
+												"typeString": "bool"
+											},
+											"typeName": {
+												"id": 6,
+												"name": "bool",
+												"nodeType": "ElementaryTypeName",
+												"src": "155:4:0",
+												"typeDescriptions": {
+													"typeIdentifier": "t_bool",
+													"typeString": "bool"
+												}
+											},
+											"value": null,
+											"visibility": "internal"
+										},
+										{
+											"constant": false,
+											"id": 9,
+											"name": "delet",
+											"nodeType": "VariableDeclaration",
+											"scope": 10,
+											"src": "176:10:0",
+											"stateVariable": false,
+											"storageLocation": "default",
+											"typeDescriptions": {
+												"typeIdentifier": "t_bool",
+												"typeString": "bool"
+											},
+											"typeName": {
+												"id": 8,
+												"name": "bool",
+												"nodeType": "ElementaryTypeName",
+												"src": "176:4:0",
+												"typeDescriptions": {
+													"typeIdentifier": "t_bool",
+													"typeString": "bool"
+												}
+											},
+											"value": null,
+											"visibility": "internal"
+										}
+									],
+									"name": "user",
+									"nodeType": "StructDefinition",
+									"scope": 15,
+									"src": "92:102:0",
+									"visibility": "public"
+								},
+								{
+									"constant": false,
+									"id": 14,
+									"name": "providers",
+									"nodeType": "VariableDeclaration",
+									"scope": 15,
+									"src": "200:29:0",
+									"stateVariable": true,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_user_$10_storage_$",
+										"typeString": "mapping(uint256 => struct RoleAccessControl.user)"
+									},
+									"typeName": {
+										"id": 13,
+										"keyType": {
+											"id": 11,
+											"name": "uint",
+											"nodeType": "ElementaryTypeName",
+											"src": "208:4:0",
+											"typeDescriptions": {
+												"typeIdentifier": "t_uint256",
+												"typeString": "uint256"
+											}
+										},
+										"nodeType": "Mapping",
+										"src": "200:19:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_user_$10_storage_$",
+											"typeString": "mapping(uint256 => struct RoleAccessControl.user)"
+										},
+										"valueType": {
+											"contractScope": null,
+											"id": 12,
+											"name": "user",
+											"nodeType": "UserDefinedTypeName",
+											"referencedDeclaration": 10,
+											"src": "214:4:0",
+											"typeDescriptions": {
+												"typeIdentifier": "t_struct$_user_$10_storage_ptr",
+												"typeString": "struct RoleAccessControl.user"
+											}
+										}
+									},
+									"value": null,
+									"visibility": "internal"
+								}
+							],
+							"scope": 16,
+							"src": "59:174:0"
+						}
+					],
+					"src": "33:200:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}

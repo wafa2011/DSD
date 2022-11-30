@@ -1,0 +1,117 @@
+{
+	"deploy": {
+		"VM:-": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"main:1": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"ropsten:3": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"rinkeby:4": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"kovan:42": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"goerli:5": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"Custom": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		}
+	},
+	"data": {
+		"bytecode": {
+			"linkReferences": {},
+			"object": "",
+			"opcodes": "",
+			"sourceMap": ""
+		},
+		"deployedBytecode": {
+			"linkReferences": {},
+			"object": "",
+			"opcodes": "",
+			"sourceMap": ""
+		},
+		"gasEstimates": null,
+		"methodIdentifiers": {
+			"RetreiveSmartContractDetails(address)": "01979921",
+			"searchDescByProvider(address)": "d88ff4bf",
+			"searchDescByname(string)": "7641cede"
+		}
+	},
+	"abi": [
+		{
+			"constant": true,
+			"inputs": [
+				{
+					"internalType": "address",
+					"name": "contractAdress",
+					"type": "address"
+				}
+			],
+			"name": "RetreiveSmartContractDetails",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"payable": false,
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"constant": true,
+			"inputs": [
+				{
+					"internalType": "address",
+					"name": "providerAdress",
+					"type": "address"
+				}
+			],
+			"name": "searchDescByProvider",
+			"outputs": [
+				{
+					"internalType": "address[]",
+					"name": "",
+					"type": "address[]"
+				}
+			],
+			"payable": false,
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"constant": true,
+			"inputs": [
+				{
+					"internalType": "string",
+					"name": "nom",
+					"type": "string"
+				}
+			],
+			"name": "searchDescByname",
+			"outputs": [
+				{
+					"internalType": "address",
+					"name": "",
+					"type": "address"
+				}
+			],
+			"payable": false,
+			"stateMutability": "view",
+			"type": "function"
+		}
+	]
+}

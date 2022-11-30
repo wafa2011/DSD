@@ -1,0 +1,101 @@
+{
+	"compiler": {
+		"version": "0.5.16+commit.9c3226ce"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "contractAdress",
+						"type": "address"
+					}
+				],
+				"name": "RetreiveSmartContractDetails",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "providerAdress",
+						"type": "address"
+					}
+				],
+				"name": "searchDescByProvider",
+				"outputs": [
+					{
+						"internalType": "address[]",
+						"name": "",
+						"type": "address[]"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "nom",
+						"type": "string"
+					}
+				],
+				"name": "searchDescByname",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/DSD/request-actions-interface.sol": "request_manager"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/DSD/request-actions-interface.sol": {
+			"keccak256": "0xcc4dbe9016c0ac67893663539d0929975a1c5f4b7fbbac0f634a99c1387b9ba5",
+			"urls": [
+				"bzz-raw://bbba2b4b034af48771d606f1118e9301f44b61e9f1e7f27a0b024d3a8edcb300",
+				"dweb:/ipfs/QmaLmHkRYnqrb5kAeZuueBNYiBnh2psYmfNPPbTZtAk18v"
+			]
+		}
+	},
+	"version": 1
+}

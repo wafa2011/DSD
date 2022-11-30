@@ -1,0 +1,613 @@
+{
+	"compiler": {
+		"version": "0.5.16+commit.9c3226ce"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "FunctinputOutputlist",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "t",
+						"type": "string"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "FunctinputOutputs",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "t",
+						"type": "string"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "eventOutputList",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "t",
+						"type": "string"
+					},
+					{
+						"internalType": "bool",
+						"name": "is_indexed",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "eventOutputs",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "t",
+						"type": "string"
+					},
+					{
+						"internalType": "bool",
+						"name": "is_indexed",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "events",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "description",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "evnttype",
+						"type": "string"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "eventsList",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "description",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "evnttype",
+						"type": "string"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "functions",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "description",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "Functype",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "scope",
+						"type": "string"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "functionsList",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "description",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "Functype",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "scope",
+						"type": "string"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "getsrd",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "id",
+								"type": "uint256"
+							},
+							{
+								"components": [
+									{
+										"components": [
+											{
+												"internalType": "string",
+												"name": "name",
+												"type": "string"
+											},
+											{
+												"internalType": "string",
+												"name": "description",
+												"type": "string"
+											},
+											{
+												"internalType": "string",
+												"name": "evnttype",
+												"type": "string"
+											},
+											{
+												"components": [
+													{
+														"internalType": "string",
+														"name": "name",
+														"type": "string"
+													},
+													{
+														"internalType": "string",
+														"name": "t",
+														"type": "string"
+													},
+													{
+														"internalType": "bool",
+														"name": "is_indexed",
+														"type": "bool"
+													}
+												],
+												"internalType": "struct SmartRegistryData.eventOutput[]",
+												"name": "eventOutputList",
+												"type": "tuple[]"
+											}
+										],
+										"internalType": "struct SmartRegistryData.eventContract[]",
+										"name": "eventsList",
+										"type": "tuple[]"
+									},
+									{
+										"components": [
+											{
+												"internalType": "string",
+												"name": "name",
+												"type": "string"
+											},
+											{
+												"internalType": "string",
+												"name": "description",
+												"type": "string"
+											},
+											{
+												"internalType": "string",
+												"name": "Functype",
+												"type": "string"
+											},
+											{
+												"internalType": "string",
+												"name": "scope",
+												"type": "string"
+											},
+											{
+												"components": [
+													{
+														"internalType": "string",
+														"name": "name",
+														"type": "string"
+													},
+													{
+														"internalType": "string",
+														"name": "t",
+														"type": "string"
+													}
+												],
+												"internalType": "struct SmartRegistryData.FunctinputOutput[]",
+												"name": "FunctinputOutputList",
+												"type": "tuple[]"
+											}
+										],
+										"internalType": "struct SmartRegistryData.funtionContract[]",
+										"name": "functionsList",
+										"type": "tuple[]"
+									}
+								],
+								"internalType": "struct SmartRegistryData.OperationalPerspective",
+								"name": "op",
+								"type": "tuple"
+							},
+							{
+								"components": [
+									{
+										"internalType": "string",
+										"name": "typeP",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "name",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "currency",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "consenssus",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "metadaExchangeProtocl",
+										"type": "string"
+									},
+									{
+										"internalType": "address",
+										"name": "Contractadd",
+										"type": "address"
+									}
+								],
+								"internalType": "struct SmartRegistryData.TechnicalPerspective",
+								"name": "tp",
+								"type": "tuple"
+							},
+							{
+								"components": [
+									{
+										"internalType": "string",
+										"name": "adress",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "creationDate",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "UpdateDate",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "typeB",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "category",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "abiB",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "bin",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "discription",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "usedCompiler",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "usedRessources",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "userInterface",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "FutureUserTupe",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "provideradress",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "consumerProfileadress",
+										"type": "string"
+									},
+									{
+										"components": [
+											{
+												"internalType": "string",
+												"name": "latency",
+												"type": "string"
+											},
+											{
+												"internalType": "string",
+												"name": "gazConsumation",
+												"type": "string"
+											},
+											{
+												"internalType": "string",
+												"name": "token",
+												"type": "string"
+											},
+											{
+												"internalType": "string",
+												"name": "price",
+												"type": "string"
+											},
+											{
+												"internalType": "string",
+												"name": "signed",
+												"type": "string"
+											},
+											{
+												"internalType": "string",
+												"name": "tested",
+												"type": "string"
+											},
+											{
+												"internalType": "string",
+												"name": "deployed",
+												"type": "string"
+											},
+											{
+												"internalType": "string",
+												"name": "legalname",
+												"type": "string"
+											},
+											{
+												"internalType": "string",
+												"name": "legaltype",
+												"type": "string"
+											}
+										],
+										"internalType": "struct SmartRegistryData.qosCharacteristics",
+										"name": "qoschara",
+										"type": "tuple"
+									}
+								],
+								"internalType": "struct SmartRegistryData.BusnissPerspective",
+								"name": "bp",
+								"type": "tuple"
+							}
+						],
+						"internalType": "struct SmartRegistryData.SCDATA[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "providers",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "id",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "role",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "publicKey",
+						"type": "string"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/DSD/SmartRegistryData.sol": "SmartRegistryData"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/DSD/RoleAccessControl.sol": {
+			"keccak256": "0xe4dc1371df689c532501b56220988c080f22c3e74fe0f68a1828d4c708c6ebff",
+			"urls": [
+				"bzz-raw://fb429704a518a8c8c45bf78db5d3aaf6b27e7cf8de8d2ae47e58367bc5c5731c",
+				"dweb:/ipfs/QmfGAGHCrVU3Jpihf4ToTcwi4QgeWiNnYbHBAyZcaWHtXX"
+			]
+		},
+		"contracts/DSD/SmartRegistryData.sol": {
+			"keccak256": "0x92222d22ad888ba2ced37c14a075339d98c7f879fd33bf5e8edb248d05e1f65d",
+			"urls": [
+				"bzz-raw://fd51684ed18e05b91f958e55975eddaffdb975a2b33a147f4c91a3db7c397bfa",
+				"dweb:/ipfs/QmSydG18aPfkKerNP54PTXjUYiQWBsCg8P5EHf8hT5CmN1"
+			]
+		}
+	},
+	"version": 1
+}

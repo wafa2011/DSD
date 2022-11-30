@@ -1,0 +1,333 @@
+{
+	"id": "1f1514dca9682fa41a5722295140023a",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.5.16",
+	"solcLongVersion": "0.5.16+commit.9c3226ce",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"contracts/DSD/requestActionsInterface.sol": {
+				"content": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.5.16;\r\n\r\n\r\ninterface requestActionsInterface  {\r\n\t   function searchDesc(string calldata category,string calldata security,string calldata legal,uint gas) external view returns(address[] memory);\r\n\r\n\t  \r\n}"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"contracts": {
+			"contracts/DSD/requestActionsInterface.sol": {
+				"requestActionsInterface": {
+					"abi": [
+						{
+							"constant": true,
+							"inputs": [
+								{
+									"internalType": "string",
+									"name": "category",
+									"type": "string"
+								},
+								{
+									"internalType": "string",
+									"name": "security",
+									"type": "string"
+								},
+								{
+									"internalType": "string",
+									"name": "legal",
+									"type": "string"
+								},
+								{
+									"internalType": "uint256",
+									"name": "gas",
+									"type": "uint256"
+								}
+							],
+							"name": "searchDesc",
+							"outputs": [
+								{
+									"internalType": "address[]",
+									"name": "",
+									"type": "address[]"
+								}
+							],
+							"payable": false,
+							"stateMutability": "view",
+							"type": "function"
+						}
+					],
+					"devdoc": {
+						"methods": {}
+					},
+					"evm": {
+						"assembly": "",
+						"bytecode": {
+							"linkReferences": {},
+							"object": "",
+							"opcodes": "",
+							"sourceMap": ""
+						},
+						"deployedBytecode": {
+							"linkReferences": {},
+							"object": "",
+							"opcodes": "",
+							"sourceMap": ""
+						},
+						"gasEstimates": null,
+						"legacyAssembly": null,
+						"methodIdentifiers": {
+							"searchDesc(string,string,string,uint256)": "bf61226a"
+						}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[{\"internalType\":\"string\",\"name\":\"category\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"security\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"legal\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"gas\",\"type\":\"uint256\"}],\"name\":\"searchDesc\",\"outputs\":[{\"internalType\":\"address[]\",\"name\":\"\",\"type\":\"address[]\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"contracts/DSD/requestActionsInterface.sol\":\"requestActionsInterface\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/DSD/requestActionsInterface.sol\":{\"keccak256\":\"0xf60fe0b3c9b0b222c108665c0b8418d97b56327d70ba6b7997387fe1d57e509b\",\"urls\":[\"bzz-raw://23d17fcac2a6d929acb949d9205e1412b3f453678284b783346134651f79c997\",\"dweb:/ipfs/QmbTPqWXZSrpwXv2dh83jthJeuN3qazAoNwu3kmucdHdsh\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [],
+						"types": null
+					},
+					"userdoc": {
+						"methods": {}
+					}
+				}
+			}
+		},
+		"sources": {
+			"contracts/DSD/requestActionsInterface.sol": {
+				"ast": {
+					"absolutePath": "contracts/DSD/requestActionsInterface.sol",
+					"exportedSymbols": {
+						"requestActionsInterface": [
+							16
+						]
+					},
+					"id": 17,
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								"^",
+								"0.5",
+								".16"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "33:24:0"
+						},
+						{
+							"baseContracts": [],
+							"contractDependencies": [],
+							"contractKind": "interface",
+							"documentation": null,
+							"fullyImplemented": false,
+							"id": 16,
+							"linearizedBaseContracts": [
+								16
+							],
+							"name": "requestActionsInterface",
+							"nodeType": "ContractDefinition",
+							"nodes": [
+								{
+									"body": null,
+									"documentation": null,
+									"id": 15,
+									"implemented": false,
+									"kind": "function",
+									"modifiers": [],
+									"name": "searchDesc",
+									"nodeType": "FunctionDefinition",
+									"parameters": {
+										"id": 10,
+										"nodeType": "ParameterList",
+										"parameters": [
+											{
+												"constant": false,
+												"id": 3,
+												"name": "category",
+												"nodeType": "VariableDeclaration",
+												"scope": 15,
+												"src": "125:24:0",
+												"stateVariable": false,
+												"storageLocation": "calldata",
+												"typeDescriptions": {
+													"typeIdentifier": "t_string_calldata_ptr",
+													"typeString": "string"
+												},
+												"typeName": {
+													"id": 2,
+													"name": "string",
+													"nodeType": "ElementaryTypeName",
+													"src": "125:6:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_string_storage_ptr",
+														"typeString": "string"
+													}
+												},
+												"value": null,
+												"visibility": "internal"
+											},
+											{
+												"constant": false,
+												"id": 5,
+												"name": "security",
+												"nodeType": "VariableDeclaration",
+												"scope": 15,
+												"src": "150:24:0",
+												"stateVariable": false,
+												"storageLocation": "calldata",
+												"typeDescriptions": {
+													"typeIdentifier": "t_string_calldata_ptr",
+													"typeString": "string"
+												},
+												"typeName": {
+													"id": 4,
+													"name": "string",
+													"nodeType": "ElementaryTypeName",
+													"src": "150:6:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_string_storage_ptr",
+														"typeString": "string"
+													}
+												},
+												"value": null,
+												"visibility": "internal"
+											},
+											{
+												"constant": false,
+												"id": 7,
+												"name": "legal",
+												"nodeType": "VariableDeclaration",
+												"scope": 15,
+												"src": "175:21:0",
+												"stateVariable": false,
+												"storageLocation": "calldata",
+												"typeDescriptions": {
+													"typeIdentifier": "t_string_calldata_ptr",
+													"typeString": "string"
+												},
+												"typeName": {
+													"id": 6,
+													"name": "string",
+													"nodeType": "ElementaryTypeName",
+													"src": "175:6:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_string_storage_ptr",
+														"typeString": "string"
+													}
+												},
+												"value": null,
+												"visibility": "internal"
+											},
+											{
+												"constant": false,
+												"id": 9,
+												"name": "gas",
+												"nodeType": "VariableDeclaration",
+												"scope": 15,
+												"src": "197:8:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_uint256",
+													"typeString": "uint256"
+												},
+												"typeName": {
+													"id": 8,
+													"name": "uint",
+													"nodeType": "ElementaryTypeName",
+													"src": "197:4:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_uint256",
+														"typeString": "uint256"
+													}
+												},
+												"value": null,
+												"visibility": "internal"
+											}
+										],
+										"src": "124:82:0"
+									},
+									"returnParameters": {
+										"id": 14,
+										"nodeType": "ParameterList",
+										"parameters": [
+											{
+												"constant": false,
+												"id": 13,
+												"name": "",
+												"nodeType": "VariableDeclaration",
+												"scope": 15,
+												"src": "229:16:0",
+												"stateVariable": false,
+												"storageLocation": "memory",
+												"typeDescriptions": {
+													"typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
+													"typeString": "address[]"
+												},
+												"typeName": {
+													"baseType": {
+														"id": 11,
+														"name": "address",
+														"nodeType": "ElementaryTypeName",
+														"src": "229:7:0",
+														"stateMutability": "nonpayable",
+														"typeDescriptions": {
+															"typeIdentifier": "t_address",
+															"typeString": "address"
+														}
+													},
+													"id": 12,
+													"length": null,
+													"nodeType": "ArrayTypeName",
+													"src": "229:9:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+														"typeString": "address[]"
+													}
+												},
+												"value": null,
+												"visibility": "internal"
+											}
+										],
+										"src": "228:18:0"
+									},
+									"scope": 16,
+									"src": "105:142:0",
+									"stateMutability": "view",
+									"superFunction": null,
+									"visibility": "external"
+								}
+							],
+							"scope": 17,
+							"src": "63:194:0"
+						}
+					],
+					"src": "33:224:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}
