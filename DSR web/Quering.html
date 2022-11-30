@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta charset="UTF-8">
+      <meta name="design" content="mon projet">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+      <title>Document</title>
+      <link rel="stylesheet" href="css/style.css">
+      <script src=""></script>
+   </head>
+   <body>
+      <header class="header">
+         <img class="img" src="images\logo.png" alt="DSR">
+        
+         <nav>
+            <ul class="container">
+               <li><a href="index.html"> SignUp / SignIn</a></li>
+               <li><a href="publication.html">Publish a contract</a></li>
+               <li><a href="aboutus.html">About us</a></li>
+               <li><a href="#contact">Documentation</a></li>
+            </ul>
+         </nav>
+      </header>
+      <main>
+         <center>
+            <h3>Search for smart contracts</h3>
+         </center>
+         <table class="tab">
+            </tr>
+           <td></td>
+            <td>
+			
+               <form>
+                  <p>Smart Contract Category :</p>
+				  <center>
+                  <select id="category"> 
+				        <option valeur="Rent">Rent</option>
+						 <option valeur="Bank">Bank</option>
+						<option valeur="Sale">Sale</option>
+						<option valeur="Copyright">Copyright</option>
+						<option valeur="NFT">NFT</option>
+						<option valeur="Voting system">Voting system</option>
+						<option valeur="Math application">Math application</option>
+						<option valeur="Finacial operation">Finacial operation</option>
+				  </select> 
+				  </center>
+				
+                  <table class="tab" style="width:100%">
+				  <tr>
+				  <td style="width:50%">
+				  <label for="checkid"  style="word-wrap:break-word">
+				  <input type="checkbox" id="legal" name="scales"checked> Legal
+				 </label>
+				  </td>
+				
+				  <td style="width:50%"> <p style="color:white;">Rank</p><label for="checkid"  style="word-wrap:break-word">
+				  <select>
+				        <option valeur="Rank">1</option>
+						<option valeur="Rank">2</option>
+				  </select> 
+				  </td>
+				  </tr>
+			
+				    <tr>
+				 
+				  <td style="width:50%">
+				  <label for="checkid"  class="label1">
+				  <input type="checkbox" id="security" name="scales"checked> Security
+				 </label>
+				  </td>
+		          <td style="width:50%"> 
+				  <select>
+				        <option valeur="Rank">1</option>
+						<option valeur="Rank">2</option>
+				  </select> 
+				  </td>
+				 
+				 
+				  </tr>  
+				  </table>
+				   <p></p>
+				   <p>maximum gas consommation:</p>
+                 <label for="checkid"  style="word-wrap:break-word">
+				  <input type="radio" id="gas" name="scales"checked> less than 1 gwei
+				 </label>
+				  <label for="checkid"  style="word-wrap:break-word">
+				  <input type="radio" id="gas" name="scales"checked> between 1.5 and 2 gwei
+				 </label>
+				 
+				  <label for="checkid"  style="word-wrap:break-word">
+				  <input type="radio" id="gas" name="scales"checked> more than 2 gwei
+				 </label>
+				  <center>
+                    <p><input type="submit" value="Query" id="Query"></p></center>
+            </form>		
+            </td>
+        <td></td>
+            </tr>
+         </table>
+      </main>
+      <footer class="footer">
+      </footer>
+   </body>
+   
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.36/dist/web3.min.js" integrity="sha256-nWBTbvxhJgjslRyuAKJHK+XcZPlCnmIAAMixz6EefVk=" crossorigin="anonymous"></script>
+	   <script >
+		  web3 = new Web3(web3.currentProvider);
+          var contract;
+          $(document).ready(function(){
+			var address = "";
+			var abi =  
+			//const web3 = new Web3(Web3.givenProvider || "ws://localhost:8545");
+			
+			contract = new web3.eth.Contract(abi,address);
+            var  category = $('#category').val();
+			var legal = $('#legal').val();
+			var gaz = $('#gaz').val();
+			var security = $('#security').val();
+              })
+          })
+		  $('#Query').click(function(){
+			web3 = new Web3(web3.currentProvider); 
+			
+			web3.eth.query(category,legal,security,gaz).then(function(result){
+			acc =  result[0];
+			$('#msg').html("helooo wafa"+acc);
+			return contract.methods.(category,legal,security,gaz).send({from:acc});
+			}).then(function(tx){
+				console.log(tx);
+			}).catch(function(tx){
+				console.log(tx);
+			})
+		  })
+        </script>
+</html>
