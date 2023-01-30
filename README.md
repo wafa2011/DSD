@@ -7,5 +7,5 @@ A Distributed Smart Registry on the Blockchain For UDL-SC smart contracts descri
 # Install
 yarn install
 
-#Testing
-yarn run test
+# Testing
+yarn  run test
