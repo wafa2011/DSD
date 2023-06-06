@@ -22,5 +22,4 @@ again or if required multiple times to make sure it is successful.
 # 5) Run the DSD 
 -- yarn start
 # 6) Testing
-To test the publishing descriptions on the DSD, we have prepered for you a set of smart contract description ready to be published availble online .
-To test the discovering of smart contract on the DSD, you can use the web interface of the user. 
+To run tests, navigate to /test/DSD and run: truffle test
