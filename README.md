@@ -11,6 +11,13 @@ extract the contents of the ZIP file to your desired location. After that, explo
 -- cd ethereum-boilerplate
 -- yarn DSD
 # 3) Configuring the  polygon L2 side chain, we get test MATIC tokens for the test
+• Step 1: Copy the ERC-20 wallet address from the MetaMask extension.
+• Step 2: Access the following website: https://faucet.matic.network/
+• Step 3: Select token: MATIC Token
+• Step 4: Paste your ERC-20 wallet address
+• Step 5: Click submit and then click confirm.
+• Step 6: If the transfer is not successful on the first attempt, click confirm
+again or if required multiple times to make sure it is successful.
 # 4) Run the DSD 
 -- yarn start
 # Testing
