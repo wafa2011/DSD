@@ -20,14 +20,13 @@ You can install Ganache by downloading it from the Truffle Framework
 website. It will give us 10 external accounts with addresses on our local
 Ethereum blockchain. Each account is preloaded with 100 fake ether.
 4. Insatall Metamask extension for Google Chrome. 
-
 # 2) Clone or fork DSD-PROJECT
  --   git clone https://github.com/wafa2011/DSD.git
 extract the contents of the ZIP file to your desired location. After that, explore the project.
 # 3) Install dependencies
--- cd ethereum-boilerplate
+-- cd ethereum-DSD
 -- yarn DSD
-# 4) Configuring the  polygon L2 side chain, we get test MATIC tokens for the test
+# 4) Configuring the polygon L2 side chain, we get test MATIC tokens for the test
 • Step 1: Copy the ERC-20 wallet address from the MetaMask extension.
 • Step 2: Access the following website: https://faucet.matic.network/
 • Step 3: Select token: MATIC Token
