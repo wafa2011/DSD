@@ -15,17 +15,12 @@ extract the contents of the ZIP file to your desired location. After that, explo
 # 3) Install dependencies
 -- cd ethereum-DSD
 -- yarn DSD
-# 4) Configuring the polygon L2 side chain, we get test MATIC tokens for the test
-• Step 1: Copy the ERC-20 wallet address from the MetaMask extension.
-• Step 2: Access the following website: https://faucet.matic.network/
-• Step 3: Select token: MATIC Token
-• Step 4: Paste your ERC-20 wallet address
-• Step 5: Click submit and then click confirm.
-• Step 6: If the transfer is not successful on the first attempt, click confirm
-again or if required multiple times to make sure it is successful.
-# 5) Run the DSD 
--- yarn start
 # 6) Testing
-To run tests, navigate to /test/DSD and run: truffle test
-# 7) Deployoment to Ethereum network and Verification
+To run tests, navigate to ./DSD/test and run: truffle test
+# 5) Migrate the project on ganache 
+-- cd ./DSD
+-- truffle migrate
+# 5) Run the DSD on the browser
+-- cd ./DSD/client
+-- yarn start
 
