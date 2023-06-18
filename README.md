@@ -5,20 +5,9 @@ A Distributed Smart Registry on the Blockchain For UDL-SC smart contracts descri
 (PDF) Towards a Uniform Description Language for Smart Contract. Available from: https://www.researchgate.net/publication/355945388_Towards_a_Uniform_Description_Language_for_Smart_Contract [accessed Jan 30 2023].
 #Here are the steps to download, replicate, and use our DSD
 # 1) Device Configuration 
-1.  Node.js installation  if you have node already installed by going to your terminal and typing:
---  $ node -v
-2. Truffle Framework,
-which allows us to build decentralized applications on the Ethereum blockchain.
-It provides a suite of tools that allow us to write smart contacts with the
-Solidity programming language. It also enables us to test our smart con-
-tracts and deploy them to the blockchain. It also gives us a place to
-develop our client-side application.
-You can install Truffle with NPM in your command line like this:
-$ npm install -g truffle
+1.  Node.js : --  $ node -v
+2. Truffle Framework : $ npm install -g truffle
 3. Install  Ganache, a local in-memory blockchain.
-You can install Ganache by downloading it from the Truffle Framework
-website. It will give us 10 external accounts with addresses on our local
-Ethereum blockchain. Each account is preloaded with 100 fake ether.
 4. Insatall Metamask extension for Google Chrome. 
 # 2) Clone or fork DSD-PROJECT
  --   git clone https://github.com/wafa2011/DSD.git
